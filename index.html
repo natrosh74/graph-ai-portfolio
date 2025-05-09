@@ -1,140 +1,141 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 <head>
-<meta charset='UTF-8' />
-<meta name='viewport' content='width=device-width, initial-scale=1.0' />
-<title>Nat Roschnik – Generative AI for Work & Research Portfolio</title>
-<style>
-body {
-  margin: 0;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  background: #f0f4f8;
-  color: #333;
-}
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-  background: #fff;
-  box-shadow: 0 0 20px rgba(0,0,0,0.1);
-  display: flex;
-  flex-wrap: wrap;
-  padding: 2rem;
-  align-items: center;
-}
-.profile-img {
-  flex: 1 1 40%;
-  text-align: center;
-}
-.profile-img img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-.content {
-  flex: 1 1 60%;
-  padding: 1rem 2rem;
-}
-h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-}
-h1 span {
-  color: #0B5ED7;
-}
-h2 {
-  color: #0B5ED7;
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-p {
-  margin-bottom: 1rem;
-  line-height: 1.5;
-}
-button {
-  background: #0B5ED7;
-  color: white;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  border-radius: 4px;
-  cursor: pointer;
-}
-button:hover {
-  background: #094db1;
-}
-.social-icons {
-  margin-top: 1rem;
-}
-.social-icons a {
-  text-decoration: none;
-  color: #0B5ED7;
-  margin-right: 10px;
-  font-size: 1.2rem;
-}
-footer {
-  text-align: center;
-  font-size: 0.85rem;
-  color: #777;
-  padding: 2rem;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nat Roschnik – Generative AI Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: #fff8f2;
+      color: #333;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid #ddd;
+    }
+    header h1 {
+      font-family: 'Times New Roman', serif;
+      font-size: 1.8rem;
+    }
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #e2a03f;
+    }
+    .hero {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+    .hero img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      display: block;
+    }
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0,0,0,0.4);
+      padding: 1rem 2rem;
+      border-radius: 5px;
+    }
+    .hero-text h2 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    .hero-text p {
+      margin: 0.5rem 0 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .grid-item {
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 5px;
+      overflow: hidden;
+      text-align: center;
+    }
+    .grid-item img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .grid-item h3 {
+      margin: 0.5rem;
+      font-size: 1rem;
+    }
+    .grid-item p {
+      font-size: 0.85rem;
+      color: #777;
+      margin: 0 0 1rem;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #777;
+      padding: 2rem 1rem;
+      border-top: 1px solid #ddd;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>Nat Roschnik</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Archive</a>
+      <a href="#">Category</a>
+      <a href="#">Pages</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
 
-<div class='container'>
-  <div class='profile-img'>
-    <img src='https://github.com/natrosh74/graph-ai-portfolio/blob/main/2017-10-16_12-24-59_017.jpg?raw=true' alt='Nat Roschnik Photo'>
-  </div>
-  <div class='content'>
-    <h1>I'M <span>NAT ROSCHNIK</span></h1>
-    <p>Public Health Nutritionist | Researcher | Thought Leader</p>
-    <p>Hello! I’m Nat Roschnik, a passionate nutritionist and researcher with over 24 years of experience designing and leading child health and nutrition programmes in 15+ countries. I love harnessing innovative tools, like generative AI, to improve child wellbeing and accelerate impact.</p>
-
-    <h2>OBJECTIVE</h2>
-    <p>I'm excited to apply AI to work and research to save time, elevate quality, and solve complex challenges across public health and nutrition programming.</p>
-
-    <button>Download CV</button>
-
-    <div class='social-icons'>
-      <a href='#'>LinkedIn</a>
-      <a href='#'>Twitter</a>
-      <a href='#'>ResearchGate</a>
+  <div class="hero">
+    <img src="https://github.com/natrosh74/graph-ai-portfolio/blob/main/2017-10-16_12-24-59_017.jpg?raw=true" alt="Nat Roschnik Hero Image">
+    <div class="hero-text">
+      <h2>Generative AI for Work & Research</h2>
+      <p>Exploring innovative AI-powered solutions</p>
     </div>
   </div>
-</div>
 
-<section style='max-width:1000px;margin:2rem auto;padding:0 2rem;'>
-  <h2>About the Course</h2>
-  <p><em>Generative AI for Work & Research Productivity Bootcamp 2025 Q2</em> is an 8-week hands-on programme that equips professionals with practical skills to:</p>
-  <ul>
-    <li>Create polished websites, documents, and presentations with AI assistance</li>
-    <li>Perform literature reviews, analyse data, and build dashboards using intuitive AI tools</li>
-    <li>Design custom chatbots that answer domain-specific questions</li>
-    <li>Set up automated workflows that work around the clock</li>
-    <li>Create and edit images, videos, and design materials with AI</li>
-    <li>Develop real-world AI solutions that integrate into daily projects</li>
-  </ul>
-</section>
+  <div class="grid">
+    <div class="grid-item">
+      <img src="https://via.placeholder.com/300x150" alt="About Me">
+      <h3>About Me</h3>
+      <p>Public Health Nutritionist and researcher with 24+ years of experience. Passionate about AI for improving child health and nutrition outcomes.</p>
+    </div>
+    <div class="grid-item">
+      <img src="https://via.placeholder.com/300x150" alt="About Course">
+      <h3>About the Course</h3>
+      <p>8-week bootcamp to master AI tools for research, writing, data, automation, and creative projects. Learning AI-powered productivity strategies.</p>
+    </div>
+    <div class="grid-item">
+      <img src="https://via.placeholder.com/300x150" alt="Submissions">
+      <h3>My Submissions</h3>
+      <p>Explore my weekly assignments showcasing practical applications of generative AI in research and professional work.</p>
+    </div>
+  </div>
 
-<section style='max-width:1000px;margin:2rem auto;padding:0 2rem;'>
-  <h2>My Weekly Submissions</h2>
-  <ul>
-    <li><a href='#'>Week 1: Website — Coming soon</a></li>
-    <li><a href='#'>Week 2: Literature Review — Coming soon</a></li>
-    <li><a href='#'>Week 3: Data Dashboard — Coming soon</a></li>
-    <li><a href='#'>Week 4: Custom Chatbot — Coming soon</a></li>
-    <li><a href='#'>Week 5: Workflow Automation — Coming soon</a></li>
-    <li><a href='#'>Week 6: AI-Enhanced Video — Coming soon</a></li>
-    <li><a href='#'>Week 7: Integrated AI Solution — Coming soon</a></li>
-    <li><a href='#'>Week 8: Capstone Presentation — Coming soon</a></li>
-  </ul>
-</section>
-
-<footer>
-  <p>&copy; 2025 Nat Roschnik | Portfolio for Generative AI Bootcamp</p>
-</footer>
-
+  <footer>
+    <p>&copy; 2025 Nat Roschnik | Portfolio for Generative AI Bootcamp</p>
+  </footer>
 </body>
 </html>
-
