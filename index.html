@@ -5,121 +5,131 @@
 <meta name='viewport' content='width=device-width, initial-scale=1.0' />
 <title>Nat Roschnik – Generative AI for Work & Research Portfolio</title>
 <style>
-:root {
-  --primary:#0B5ED7;
-  --dark:#0D1B2A;
-  --light:#f8f9fa;
-  --max-width: 900px;
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: #f0f4f8;
+  color: #333;
 }
-*{box-sizing:border-box;margin:0;padding:0;}
-body{
-  font-family: Arial, Helvetica, sans-serif;
-  line-height:1.6;
-  color:var(--dark);
-  background: var(--light);
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  align-items: center;
 }
-header{
-  background: var(--primary);
-  color:white;
-  padding:1rem 0;
+.profile-img {
+  flex: 1 1 40%;
+  text-align: center;
 }
-nav{
-  max-width:var(--max-width);
-  margin:0 auto;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:0 1rem;
+.profile-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
-nav ul{
-  list-style:none;
-  display:flex;
-  gap:1rem;
+.content {
+  flex: 1 1 60%;
+  padding: 1rem 2rem;
 }
-nav a{
-  color:white;
-  text-decoration:none;
-  font-weight:bold;
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
 }
-section{
-  max-width:var(--max-width);
-  margin:2rem auto;
-  padding:0 1rem;
+h1 span {
+  color: #0B5ED7;
 }
-h2{
-  margin-bottom:1rem;
-  color:var(--primary);
+h2 {
+  color: #0B5ED7;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
 }
-p{
-  margin-bottom:1rem;
+p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
 }
-#submissions ul{
-  list-style:disc inside;
+button {
+  background: #0B5ED7;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
 }
-footer{
-  text-align:center;
-  padding:2rem 1rem;
-  background:var(--dark);
-  color:white;
+button:hover {
+  background: #094db1;
 }
-@media (max-width:600px){
-  nav ul{
-    flex-direction:column;
-    gap:0.5rem;
-  }
+.social-icons {
+  margin-top: 1rem;
+}
+.social-icons a {
+  text-decoration: none;
+  color: #0B5ED7;
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+footer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #777;
+  padding: 2rem;
 }
 </style>
 </head>
 <body>
 
-<header>
-  <nav>
-    <h1>Nat Roschnik</h1>
-    <ul>
-      <li><a href='#about-me'>About me</a></li>
-      <li><a href='#about-course'>The course</a></li>
-      <li><a href='#submissions'>Weekly submissions</a></li>
-    </ul>
-  </nav>
-</header>
+<div class='container'>
+  <div class='profile-img'>
+    <img src='https://via.placeholder.com/400x500' alt='Nat Roschnik Photo'>
+  </div>
+  <div class='content'>
+    <h1>I'M <span>NAT ROSCHNIK</span></h1>
+    <p>Public Health Nutritionist | Researcher | Thought Leader</p>
+    <p>Hello! I’m Nat Roschnik, a passionate nutritionist and researcher with over 24 years of experience designing and leading child health and nutrition programmes in 15+ countries. I love harnessing innovative tools, like generative AI, to improve child wellbeing and accelerate impact.</p>
 
-<main>
-  <section id='about-me'>
-    <h2>About me</h2>
-    <p>Hello! I’m <strong>Nat Roschnik</strong>, a public-health nutritionist and researcher with more than 24 years of experience leading child health and nutrition programmes across 15+ countries for Save the Children. I currently serve as Senior Nutrition Advisor, helping teams design evidence-based programmes and innovative research to tackle malnutrition and improve early childhood development.</p>
-    <p>I’m passionate about harnessing technology—and now generative AI—to drive faster insights, stronger partnerships, and better outcomes for children worldwide.</p>
-    <p>Based in scenic Menthon-Saint-Bernard, France, I speak English, French, and a sprinkling of other languages, and I love learning new tools that spark creativity and impact.</p>
-  </section>
+    <h2>OBJECTIVE</h2>
+    <p>I'm excited to apply AI to work and research to save time, elevate quality, and solve complex challenges across public health and nutrition programming.</p>
 
-  <section id='about-course'>
-    <h2>About the course</h2>
-    <p><em>Generative AI for Work &amp; Research Productivity Bootcamp 2025 Q2</em> is an 8-week, hands-on programme that equips professionals with practical skills to:</p>
-    <ul>
-      <li>Create polished websites, documents, and presentations with AI assistance</li>
-      <li>Perform literature reviews, analyse data, and build dashboards using intuitive AI tools</li>
-      <li>Design custom chatbots that answer domain-specific questions</li>
-      <li>Set up automated workflows that work around the clock</li>
-      <li>Create and edit images, videos, and design materials with AI</li>
-      <li>Develop real-world AI solutions that integrate into daily projects</li>
-    </ul>
-    <p>By the end of the bootcamp, participants can harness AI to save time, boost quality, and solve complex challenges across research, creative industries, and business.</p>
-  </section>
+    <button>Download CV</button>
 
-  <section id='submissions'>
-    <h2>My weekly submissions</h2>
-    <p>Links to each assignment will appear here as the course progresses:</p>
-    <ul>
-      <li><a href='#'>Week 1: Website — Coming soon</a></li>
-      <li><a href='#'>Week 2: Literature Review — Coming soon</a></li>
-      <li><a href='#'>Week 3: Data Dashboard — Coming soon</a></li>
-      <li><a href='#'>Week 4: Custom Chatbot — Coming soon</a></li>
-      <li><a href='#'>Week 5: Workflow Automation — Coming soon</a></li>
-      <li><a href='#'>Week 6: AI-Enhanced Video — Coming soon</a></li>
-      <li><a href='#'>Week 7: Integrated AI Solution — Coming soon</a></li>
-      <li><a href='#'>Week 8: Capstone Presentation — Coming soon</a></li>
-    </ul>
-  </section>
-</main>
+    <div class='social-icons'>
+      <a href='#'>LinkedIn</a>
+      <a href='#'>Twitter</a>
+      <a href='#'>ResearchGate</a>
+    </div>
+  </div>
+</div>
+
+<section style='max-width:1000px;margin:2rem auto;padding:0 2rem;'>
+  <h2>About the Course</h2>
+  <p><em>Generative AI for Work & Research Productivity Bootcamp 2025 Q2</em> is an 8-week hands-on programme that equips professionals with practical skills to:</p>
+  <ul>
+    <li>Create polished websites, documents, and presentations with AI assistance</li>
+    <li>Perform literature reviews, analyse data, and build dashboards using intuitive AI tools</li>
+    <li>Design custom chatbots that answer domain-specific questions</li>
+    <li>Set up automated workflows that work around the clock</li>
+    <li>Create and edit images, videos, and design materials with AI</li>
+    <li>Develop real-world AI solutions that integrate into daily projects</li>
+  </ul>
+</section>
+
+<section style='max-width:1000px;margin:2rem auto;padding:0 2rem;'>
+  <h2>My Weekly Submissions</h2>
+  <ul>
+    <li><a href='#'>Week 1: Website — Coming soon</a></li>
+    <li><a href='#'>Week 2: Literature Review — Coming soon</a></li>
+    <li><a href='#'>Week 3: Data Dashboard — Coming soon</a></li>
+    <li><a href='#'>Week 4: Custom Chatbot — Coming soon</a></li>
+    <li><a href='#'>Week 5: Workflow Automation — Coming soon</a></li>
+    <li><a href='#'>Week 6: AI-Enhanced Video — Coming soon</a></li>
+    <li><a href='#'>Week 7: Integrated AI Solution — Coming soon</a></li>
+    <li><a href='#'>Week 8: Capstone Presentation — Coming soon</a></li>
+  </ul>
+</section>
 
 <footer>
   <p>&copy; 2025 Nat Roschnik | Portfolio for Generative AI Bootcamp</p>
