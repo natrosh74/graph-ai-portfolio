@@ -3,53 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nat Roschnik – Generative AI for Work & Research Portfolio</title>
+  <title>Nat Roschnik – Generative AI Portfolio</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-family: 'Georgia', serif;
       background: #f7f7f7;
       color: #333;
     }
     .container {
-      max-width: 900px;
+      max-width: 800px;
       background: #fff;
       margin: 2rem auto;
       padding: 2rem;
       box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      display: grid;
+      grid-template-columns: 30% 65%;
+      gap: 5%;
     }
-    h1 {
-      font-family: 'Georgia', serif;
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 0.25rem;
+    .left {
+      border-right: 2px solid #e0e0e0;
+      padding-right: 1rem;
     }
-    h2 {
-      font-size: 1.2rem;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 0.3rem;
-      margin-top: 1.5rem;
-    }
-    .header-info {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #777;
+    .right {
+      padding-left: 1rem;
     }
     .profile-pic {
-      width: 120px;
-      height: 120px;
+      width: 100%;
       border-radius: 50%;
       object-fit: cover;
-      display: block;
-      margin: 1rem auto;
+      margin-bottom: 1rem;
+      border: 3px solid #e0b354;
+    }
+    h1 {
+      font-size: 1.8rem;
+      text-align: center;
+      margin-bottom: 0.2rem;
+    }
+    h2 {
+      font-size: 1.1rem;
+      margin: 1rem 0 0.5rem;
+      color: #e0b354;
+      border-bottom: 1px solid #e0b354;
+    }
+    .contact p, .skills ul, .hobbies ul {
+      font-size: 0.9rem;
+      margin: 0.3rem 0;
+    }
+    .skills ul, .hobbies ul {
+      list-style: none;
+      padding: 0;
+    }
+    .skills li::before, .hobbies li::before {
+      content: "\2022 ";
+      color: #e0b354;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
     }
     .section {
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.2rem;
     }
     .section ul {
       padding-left: 1rem;
     }
     footer {
+      grid-column: 1 / span 2;
       text-align: center;
       font-size: 0.8rem;
       color: #777;
@@ -59,42 +78,65 @@
 </head>
 <body>
   <div class="container">
-    <h1>Nat Roschnik</h1>
-    <div class="header-info">Generative AI for Work & Research Portfolio</div>
-    <img class="profile-pic" src="https://github.com/natrosh74/graph-ai-portfolio/blob/main/2017-10-16_12-24-59_017.jpg?raw=true" alt="Nat Roschnik">
-
-    <div class="section">
-      <h2>About Me</h2>
-      <p>I'm Nat Roschnik, a public health nutritionist and researcher with 24+ years of experience leading child health and nutrition programmes in over 15 countries. I currently serve as Senior Nutrition Advisor at Save the Children UK. I'm passionate about using innovative tools, including generative AI, to enhance research, programme design, and impact for child wellbeing.</p>
+    <div class="left">
+      <img class="profile-pic" src="https://github.com/natrosh74/graph-ai-portfolio/blob/main/2017-10-16_12-24-59_017.jpg?raw=true" alt="Nat Roschnik">
+      <h1>Nat Roschnik</h1>
+      <p style="text-align:center; font-size:0.9rem; color:#555;">Public Health Nutritionist</p>
+      <div class="contact">
+        <h2>Contact</h2>
+        <p>Location: Menthon-Saint-Bernard, France</p>
+        <p>LinkedIn: [Add Link]</p>
+        <p>ResearchGate: [Add Link]</p>
+      </div>
+      <div class="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>Research (RCTs, Implementation Science)</li>
+          <li>Project & Team Management</li>
+          <li>Fundraising & Proposal Writing</li>
+          <li>Thought Leadership & Advocacy</li>
+        </ul>
+      </div>
+      <div class="hobbies">
+        <h2>Languages</h2>
+        <ul>
+          <li>English, French (Fluent)</li>
+          <li>Spanish, German, Portuguese (Conversational)</li>
+        </ul>
+      </div>
     </div>
 
-    <div class="section">
-      <h2>About the Course</h2>
-      <p><em>Generative AI for Work & Research Productivity Bootcamp 2025 Q2</em> is an 8-week hands-on programme designed to empower professionals with practical AI skills. Through this course, I am learning to:</p>
-      <ul>
-        <li>Create professional websites, documents, and presentations using AI</li>
-        <li>Perform literature reviews, analyze data, and build dashboards with intuitive AI tools</li>
-        <li>Design custom chatbots for domain-specific queries</li>
-        <li>Set up automated workflows</li>
-        <li>Utilize AI for creating and editing multimedia content</li>
-        <li>Develop practical AI solutions integrated into daily projects</li>
-      </ul>
-      <p>By the end of this course, I aim to harness AI to save time, improve quality, and solve real-world challenges across research and public health programming.</p>
-    </div>
-
-    <div class="section">
-      <h2>My Weekly Submissions</h2>
-      <p>Links to each weekly submission will be added here as the course progresses:</p>
-      <ul>
-        <li>Week 1: Website – Coming soon</li>
-        <li>Week 2: Literature Review – Coming soon</li>
-        <li>Week 3: Data Dashboard – Coming soon</li>
-        <li>Week 4: Custom Chatbot – Coming soon</li>
-        <li>Week 5: Workflow Automation – Coming soon</li>
-        <li>Week 6: AI-Enhanced Video – Coming soon</li>
-        <li>Week 7: Integrated AI Solution – Coming soon</li>
-        <li>Week 8: Capstone Presentation – Coming soon</li>
-      </ul>
+    <div class="right">
+      <div class="section">
+        <h2>About Me</h2>
+        <p>I’m Nat Roschnik, a public health nutritionist with 24 years of experience supporting Save the Children’s programmes in nutrition, school health, malaria, WASH, HIV/AIDS, neglected tropical diseases, early childhood development, food security, and social protection across more than 15 countries. I’ve led and collaborated on nine cluster randomized trials and diverse research projects, bringing together partners, teams, and stakeholders to improve child nutrition and wellbeing. I’m passionate about using innovative tools, including generative AI, to enhance research, programme design, and real-world impact for children worldwide.</p>
+      </div>
+      <div class="section">
+        <h2>About the Course</h2>
+        <p><em>Generative AI for Work & Research Productivity Bootcamp 2025 Q2</em> is an 8-week hands-on programme designed to help professionals learn to:</p>
+        <ul>
+          <li>Create professional websites, documents, and presentations with AI</li>
+          <li>Perform literature reviews, analyze data, and build dashboards with intuitive AI tools</li>
+          <li>Design custom chatbots for domain-specific queries</li>
+          <li>Set up automated workflows</li>
+          <li>Utilize AI for creating and editing multimedia content</li>
+          <li>Develop practical AI solutions integrated into daily projects</li>
+        </ul>
+        <p>By the end of this programme, I aim to harness AI to save time, improve quality, and solve real-world challenges across research, creative industries, and public health programming.</p>
+      </div>
+      <div class="section">
+        <h2>My Weekly Submissions</h2>
+        <ul>
+          <li>Week 1: Website – Coming soon</li>
+          <li>Week 2: Literature Review – Coming soon</li>
+          <li>Week 3: Data Dashboard – Coming soon</li>
+          <li>Week 4: Custom Chatbot – Coming soon</li>
+          <li>Week 5: Workflow Automation – Coming soon</li>
+          <li>Week 6: AI-Enhanced Video – Coming soon</li>
+          <li>Week 7: Integrated AI Solution – Coming soon</li>
+          <li>Week 8: Capstone Presentation – Coming soon</li>
+        </ul>
+      </div>
     </div>
 
     <footer>
